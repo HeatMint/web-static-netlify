@@ -25,4 +25,4 @@ def stat(path):
     response.headers['X-Frame-Options'] = 'ALLOW-FROM http://gomoku.kcibald.com'
     return response
 
-app.run(port=80)
+app.run()
