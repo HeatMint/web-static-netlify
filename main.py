@@ -25,5 +25,4 @@ def stat(path):
     response.headers['X-Frame-Options'] = 'ALLOW-FROM http://gomoku.kcibald.com'
     return response
 
-http_server = WSGIServer(('', 80), app)
-http_server.serve_forever()
+app.run(port=80)
